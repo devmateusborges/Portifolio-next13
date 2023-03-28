@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#0E1218] text-[#ffffff] scroll-smooth overflow-x-hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .centralizer {
+    @apply flex items-center justify-center;
+  }
+  .bg-background-system {
+    @apply bg-[#60bdc4];
+  }
+  .circle_photo {
+    background: rgba(26, 206, 219, 0.71);
+  }
+  .color-system {
+    @apply text-[#60bdc4];
+  }
+  .animation_pulse_sistem {
+    @apply transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300;
+  }
+}

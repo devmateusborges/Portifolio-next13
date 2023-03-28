@@ -1,91 +1,64 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
+"use client";
+import {
+  Alien,
+  GithubLogo,
+  InstagramLogo,
+  MapPinLine,
+  UsersFour,
+} from "phosphor-react";
+import Image from "next/image";
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="w-full h-[100vh] centralizer">
+      <div className="w-[90%] xl:w-[25%] md:w-[25%] bg-background-system centralizer h-[50vh] xl:h-[80vh] rounded-[40px]    ">
+        <div className="w-[95%] bg-[#0E1218] h-[48vh] xl:h-[78vh] rounded-[45px] p-5 relative overflow-hidden animation_pulse_sistem">
+          <div className="w-full flex items-center animation_pulse_sistem">
+            <span className="border border-[#60bdc4] rounded-[100px] p-2 ">
+              <Alien className="w-5 h-5 color-system " />
+            </span>
+            <h1 className=" text-[15px] xl:text-[20px] font-semibold justify-between ml-3 ">
+              Mateus Borges
+            </h1>
+          </div>
+
+          <div className="absolute right-[-10vh] animation_pulse_sistem ">
+            <div className="bg-[#60bdc4] xl:p-8  p-5 rounded-[100%]">
+              <Image
+                className=" w-[200px] xl:w-[260px] rounded-[100%]"
+                src="https://avatars.githubusercontent.com/u/51982343?v=4"
+                alt="FOTO PERFIL"
+                width={260}
+                height={260}
+              />
+            </div>
+          </div>
+
+          <div className="bg-stone-800 absolute z-10 w-[70%] xl:w-[50%] h-[23vh]  rounded-[30px] bottom-1  xl:bottom-[12vh] p-1 xl:p-3 centralizer flex-col  opacity-75 animation_pulse_sistem ">
+            <div className="flex w-full">
+              <UsersFour className="w-5 h-5 text-white" />
+              <p className="font-semibold text-[14px] ml-2">716 Seguidores</p>
+            </div>
+            <div className="flex w-full">
+              <UsersFour className="w-5 h-5 text-white" />
+              <p className="font-semibold text-[14px] ml-2">193 Seguindo</p>
+            </div>
+            <div className="flex w-full">
+              <GithubLogo className="w-5 h-5 text-white" />
+
+              <p className="font-semibold text-[14px] ml-2">38 Repositórios</p>
+            </div>
+            <div className="flex w-full">
+              <InstagramLogo className="w-5 h-5 text-white" />
+              <p className="font-semibold text-[14px] ml-2">716 @mateus_bg</p>
+            </div>
+            <div className="flex w-full">
+              <MapPinLine className="w-5 h-5 text-white" />
+              <p className="font-semibold text-[14px] ml-2">São joaquim</p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      <div></div>
+    </div>
+  );
 }
