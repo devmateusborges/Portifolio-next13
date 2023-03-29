@@ -1,15 +1,22 @@
 "use client";
 import {
   Alien,
+  Article,
+  Envelope,
+  FacebookLogo,
   GithubLogo,
   InstagramLogo,
+  LinkedinLogo,
   MapPinLine,
   UsersFour,
 } from "phosphor-react";
 import Image from "next/image";
+import Link from "next/link";
+import { AppCardViewGit } from "@/components/AppCardViewGit";
+
 export default function Home() {
   return (
-    <div className="w-full h-[100vh] centralizer">
+    <div className="w-full h-[100vh] centralizer flex-col md:flex-row">
       <div className="w-[90%] xl:w-[25%] md:w-[25%] bg-background-system centralizer h-[50vh] xl:h-[80vh] rounded-[40px]    ">
         <div className="w-[95%] bg-[#0E1218] h-[48vh] xl:h-[78vh] rounded-[45px] p-5 relative overflow-hidden animation_pulse_sistem">
           <div className="w-full flex items-center animation_pulse_sistem">
@@ -32,33 +39,51 @@ export default function Home() {
               />
             </div>
           </div>
-
-          <div className="bg-stone-800 absolute z-10 w-[70%] xl:w-[50%] h-[23vh]  rounded-[30px] bottom-1  xl:bottom-[12vh] p-1 xl:p-3 centralizer flex-col  opacity-75 animation_pulse_sistem ">
-            <div className="flex w-full">
-              <UsersFour className="w-5 h-5 text-white" />
-              <p className="font-semibold text-[14px] ml-2">716 Seguidores</p>
-            </div>
-            <div className="flex w-full">
-              <UsersFour className="w-5 h-5 text-white" />
-              <p className="font-semibold text-[14px] ml-2">193 Seguindo</p>
-            </div>
-            <div className="flex w-full">
-              <GithubLogo className="w-5 h-5 text-white" />
-
-              <p className="font-semibold text-[14px] ml-2">38 Repositórios</p>
-            </div>
-            <div className="flex w-full">
-              <InstagramLogo className="w-5 h-5 text-white" />
-              <p className="font-semibold text-[14px] ml-2">716 @mateus_bg</p>
-            </div>
-            <div className="flex w-full">
-              <MapPinLine className="w-5 h-5 text-white" />
-              <p className="font-semibold text-[14px] ml-2">São joaquim</p>
-            </div>
-          </div>
+          <AppCardViewGit />
         </div>
       </div>
-      <div></div>
+      <div className=" w-[100%] first-line md:w-[30%]  flex items-center flex-col  ">
+        <Link
+          className="button_system mt-5"
+          target="_blank"
+          href="https://www.facebook.com/mateusbcompany/"
+        >
+          <FacebookLogo className="w-5 h-5 text-white " />
+          <p className="ml-3">Faceboock</p>
+        </Link>
+        <Link
+          target="_blank"
+          href="https://mail.google.com/mail/u/1/?pli=1#inbox"
+          className="button_system mt-5"
+        >
+          <Envelope className="w-5 h-5 text-white " />
+          <p className="ml-3">Email</p>
+        </Link>
+        <Link
+          target="_blank"
+          href="https://www.instagram.com/mateus__bg/"
+          className="button_system mt-5"
+        >
+          <InstagramLogo className="w-5 h-5 text-white " />
+          <p className="ml-3">Instagram</p>
+        </Link>
+        <Link
+          target="_blank"
+          href="https://github.com/devmateusborges"
+          className="button_system mt-5"
+        >
+          <GithubLogo className="w-5 h-5 text-white " />
+          <p className="ml-3">GitHub</p>
+        </Link>
+        <Link
+          target="_blank"
+          href="https://www.linkedin.com/in/mateus-borges-b49a20170/"
+          className="button_system mt-5"
+        >
+          <LinkedinLogo className="w-5 h-5 text-white " />
+          <p className="ml-3">Linkedin</p>
+        </Link>
+      </div>
     </div>
   );
 }

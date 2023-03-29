@@ -23,4 +23,10 @@ body {
   .animation_pulse_sistem {
     @apply transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300;
   }
+  .button_system {
+    @apply hover:bg-[#284f52] p-2 font-bold rounded-xl flex animation_pulse_sistem  w-[90%]  md:w-[50%] border-2 border-[#60bdc4] centralizer;
+  }
+  .card_system {
+    @apply bg-[#22203b] w-full p-3  border-2 border-[#60bdc4]  flex flex-col items-center justify-center rounded-xl;
+  }
 }
