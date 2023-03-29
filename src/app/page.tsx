@@ -17,8 +17,8 @@ import { AppCardViewGit } from "@/components/AppCardViewGit";
 export default function Home() {
   return (
     <div className="w-full h-[100vh] centralizer flex-col md:flex-row">
-      <div className="w-[90%] xl:w-[25%] md:w-[25%] bg-background-system centralizer h-[50vh] xl:h-[80vh] rounded-[40px]    ">
-        <div className="w-[95%] bg-[#0E1218] h-[48vh] xl:h-[78vh] rounded-[45px] p-5 relative overflow-hidden animation_pulse_sistem">
+      <div className="w-[90%] xl:w-[25%] md:w-[25%] bg-background-system centralizer h-[60vh] xl:h-[80vh] rounded-[40px]    ">
+        <div className="w-[95%] bg-[#0E1218] h-[58vh] xl:h-[78vh] rounded-[45px] p-5 relative overflow-hidden animation_pulse_sistem">
           <div className="w-full flex items-center animation_pulse_sistem">
             <span className="border border-[#60bdc4] rounded-[100px] p-2 ">
               <Alien className="w-5 h-5 color-system " />
