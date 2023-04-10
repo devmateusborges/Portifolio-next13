@@ -5,6 +5,8 @@
 body {
   @apply bg-[#0E1218] text-[#ffffff] scroll-smooth overflow-x-hidden;
   -webkit-font-smoothing: antialiased;
+  background-image: url("https://images7.alphacoders.com/122/1228014.png");
+  background-size: 100%;
 }
 
 @layer components {
@@ -12,19 +14,19 @@ body {
     @apply flex items-center justify-center;
   }
   .bg-background-system {
-    @apply bg-[#60bdc4];
+    @apply bg-[#a860c444];
   }
   .circle_photo {
     background: rgba(26, 206, 219, 0.71);
   }
   .color-system {
-    @apply text-[#60bdc4];
+    @apply text-[#b360c4];
   }
   .animation_pulse_sistem {
     @apply transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300;
   }
   .button_system {
-    @apply hover:bg-[#284f52] p-2 font-bold rounded-xl flex animation_pulse_sistem  w-[90%]  md:w-[50%] border-2 border-[#60bdc4] centralizer;
+    @apply p-2 font-bold rounded-xl flex animation_pulse_sistem  w-[90%]  md:w-[50%] border-2 border-[#9711a8] centralizer;
   }
   .card_system {
     @apply bg-[#22203b] w-full p-3  border-2 border-[#60bdc4]  flex flex-col items-center justify-center rounded-xl;
